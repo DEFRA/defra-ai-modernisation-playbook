@@ -1,5 +1,7 @@
 # Playbook Template
 
+**Live site:** [defra.github.io/defra-ai-modernisation-playbook](https://defra.github.io/defra-ai-modernisation-playbook/)
+
 A reusable Jekyll playbook template for building team guidance, standards, and documentation sites. Fork this repository and customise it to create your own playbook.
 
 ## Prerequisites
@@ -29,7 +31,7 @@ bundle install
 bundle exec jekyll serve --livereload
 ```
 
-The site will be available at `http://localhost:4000/playbook/`.
+The site will be available at `http://localhost:4000/defra-ai-modernisation-playbook/`.
 
 ## Contributing
 

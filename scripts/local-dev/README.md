@@ -17,7 +17,7 @@ This folder contains scripts to help you run the Jekyll site locally for develop
 
 3. **Open your browser to:**
    ```
-   http://localhost:4000/playbook/
+   http://localhost:4000/defra-ai-modernisation-playbook/
    ```
 
 ## Scripts Overview
@@ -31,7 +31,7 @@ This folder contains scripts to help you run the Jekyll site locally for develop
 ### `serve.sh`
 - Starts Jekyll development server
 - Enables live reload (changes automatically refresh browser)
-- Serves on `http://localhost:4000/playbook/`
+- Serves on `http://localhost:4000/defra-ai-modernisation-playbook/`
 - Use this for daily development
 
 ### `build.sh`

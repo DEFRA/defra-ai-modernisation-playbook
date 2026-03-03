@@ -6,7 +6,7 @@ This is a **Jekyll-based documentation site** (GitHub Pages) serving as a reusab
 
 **Key facts:**
 - Jekyll theme: `jekyll-theme-minimal`
-- Base URL: `/playbook`
+- Base URL: `/defra-ai-modernisation-playbook`
 
 ## Architecture & Structure
 
@@ -39,7 +39,7 @@ assets/css/          # Main stylesheet importing theme + defra-styles
 ./scripts/local-dev/build.sh
 ```
 
-Server runs at `http://localhost:4000/playbook/`
+Server runs at `http://localhost:4000/defra-ai-modernisation-playbook/`
 
 ## Content Conventions
 

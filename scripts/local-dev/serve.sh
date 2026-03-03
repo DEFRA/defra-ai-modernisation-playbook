@@ -16,7 +16,7 @@ echo "🧹 Cleaning Jekyll cache..."
 bundle exec jekyll clean
 
 # Start Jekyll server
-echo "📡 Starting server at http://localhost:4000/playbook/"
+echo "📡 Starting server at http://localhost:4000/defra-ai-modernisation-playbook/"
 echo "   Press Ctrl+C to stop the server"
 echo ""
 

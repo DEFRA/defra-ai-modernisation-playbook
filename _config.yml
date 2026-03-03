@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: Playbook Template
 description: A reusable playbook template for building team guidance, standards, and documentation sites. Fork this repository and customise it to create your own playbook.
-baseurl: '/playbook'
+baseurl: '/defra-ai-modernisation-playbook'
 logo: /assets/images/defra-logo.svg
 author: "Defra"
 lang: "en-GB"
