@@ -1,48 +1,42 @@
 # Defra AI SDLC Playbook
-Version 1.8
 
-This playbook shows you how to use AI tools in software development. We designed it for Defra teams and update it regularly with new practices and lessons learned.
+A Jekyll site providing guidance on best practices for using AI in the Software Development Lifecycle (SDLC), tailored to Defra's needs and challenges.
 
-## Table of Contents
-1. [Welcome](README.md)
-2. [Responsible Practices](pages/responsible-practices/README.md)
-    1. [Ethics](pages/responsible-practices/ethics.md)
-    2. [Sustainability](pages/responsible-practices/sustainability.md)
-    3. [Security](pages/responsible-practices/security.md)
-3. [Getting Started](pages/getting-started/README.md)
-    1. [Workflow](pages/getting-started/workflow.md)
-    2. [The Four Pillars](pages/getting-started/the-four-pillars.md)
-    3. [Mindset](pages/getting-started/ai-working-mindset.md)
-    4. [Project Setup](pages/getting-started/project-setup.md)
-4. [Generating Requirements](pages/generating-requirements/README.md)
-    1. [Product Requirements](pages/generating-requirements/product-requirements.md)
-    2. [Technical Requirements](pages/generating-requirements/technical-requirements.md)
-5. [Feature Development](pages/feature-development/README.md)
-    1. [Development](pages/feature-development/development.md)
-    2. [Test Driven Development](pages/feature-development/test-driven-development.md)
-    3. [Testing](pages/feature-development/testing.md)
-    4. [Refactoring](pages/feature-development/refactoring.md)
-    5. [Documentation](pages/feature-development/documentation.md)
-6. [Appendix](pages/appendix/README.md)
-    1. [Prompt Library](pages/appendix/prompt-library/README.md)
-    2. [Rules and Instructions for AI](pages/appendix/rules-for-ai/README.md)
-    3. [Allowed Tools for Defra Pilot](pages/appendix/defra-approved-tools.md)
-    4. [Defra MCP Guidance](pages/appendix/defra-mcp-guidance.md)
-    5. [Contributing](pages/appendix/CONTRIBUTING.md)
+**Live site:** [defra.github.io/defra-ai-sdlc](https://defra.github.io/defra-ai-sdlc)
 
-## Overview
+## Prerequisites
 
-Defra manages environmental protection, food production and rural development across the UK. The department works through multiple sub-departments and arms-length bodies. Each has different roles and ways of working.
+- Ruby 3.3+
+- Bundler (`gem install bundler`)
 
-Defra's size and complexity create opportunities to use AI throughout software development. This playbook helps you use these opportunities through practical methods, tools and techniques.
+## Local Development
 
-## Contact Us
+Setup and serve scripts are provided in `scripts/local-dev/`:
 
-The Defra AI Capabilities and Enablement team maintains this playbook. Contact us:
+```bash
+# First-time setup
+./scripts/local-dev/setup.sh
 
-- Through the `#ask-ace` slack channel on Defra slack ("grey slack")
-- Via Steve Dickinson, Principal Software Developer (CCTS AI and Innovation)
+# Build the site
+./scripts/local-dev/build.sh
+
+# Serve locally with live reload
+./scripts/local-dev/serve.sh
+```
+
+Or run manually:
+
+```bash
+bundle install
+bundle exec jekyll serve --livereload
+```
+
+The site will be available at `http://localhost:4000/defra-ai-sdlc/`.
 
 ## Contributing
 
-We welcome contributions from the Defra community. See the [CONTRIBUTING](pages/appendix/CONTRIBUTING.md) file for how to contribute to this playbook.
+We welcome contributions from the Defra community. See the [Contributing](pages/appendix/CONTRIBUTING.md) page for guidance.
+
+## Licence
+
+All content is available under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), except where otherwise stated.

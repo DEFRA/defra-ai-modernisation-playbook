@@ -24,6 +24,17 @@ plugins:
   - jekyll-seo-tag
   - jekyll-relative-links
 
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "pages"
+    values:
+      layout: default
+
 # Include files that are normally excluded
 include:
   - CONTRIBUTING.md
@@ -42,3 +53,4 @@ exclude:
   - gemfiles/
   - prompts/
   - scripts/
+  - README.md
