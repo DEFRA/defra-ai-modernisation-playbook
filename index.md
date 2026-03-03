@@ -1,22 +1,26 @@
 ---
-title: Welcome
+title: Home
 ---
 
-# Defra AI SDLC Playbook
+# Playbook Template
 
 Version {{ site.version }}
 
-This playbook shows you how to use AI tools in software development. We designed it for Defra teams and update it regularly with new practices and lessons learned.
+This is a reusable playbook template for building team guidance, standards, and documentation sites. It comes with Defra branding, a responsive sidebar navigation, dark mode support, and a GovUK-style footer out of the box.
 
-## Overview
+## How to use this template
 
-Defra manages environmental protection, food production and rural development across the UK. The department works through multiple sub-departments and arms-length bodies. Each has different roles and ways of working.
+1. Fork this repository
+2. Update `_config.yml` with your playbook's title, description, and author
+3. Replace the placeholder pages under `pages/` with your own content
+4. Update `_data/navigation.yml` to reflect your page structure
 
-Defra's size and complexity create opportunities to use AI throughout software development. This playbook helps you use these opportunities through practical methods, tools and techniques.
+Each page uses simple Markdown with a `title` in the front matter. The layout and navigation are handled automatically.
 
-## Contact Us
+## Sections
 
-The Defra AI Capabilities and Enablement team maintains this playbook. Contact us:
+- [Getting Started]({{ "/pages/getting-started/" | relative_url }}) — start here to understand the playbook structure
+- [Guides]({{ "/pages/guides/" | relative_url }}) — example guide pages to use as templates
+- [Contributing]({{ "/pages/contributing/" | relative_url }}) — how to add and maintain content
 
-- Through the `#ask-ace` slack channel on Defra slack ("grey slack")
-- Via Steve Dickinson, Principal Software Developer (CCTS AI and Innovation)
+See the [Contributing]({{ "/pages/contributing/" | relative_url }}) guide for details on adding new pages and sections.
