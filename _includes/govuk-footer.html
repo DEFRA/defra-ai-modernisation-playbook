@@ -2,33 +2,11 @@
     <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
         <h2 class="govuk-visually-hidden">Support links</h2>
         <ul class="govuk-footer__inline-list govuk-!-display-none-print">
+            {% for link in site.data.footer_links.support_links %}
             <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs (Defra)</a>
+              <a class="govuk-footer__link"{% if link.lang %} lang="{{ link.lang }}"{% endif %} href="{{ link.url }}">{{ link.title }}</a>
             </li>
-            <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help">Help</a>
-            </li>
-            <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;2&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help/privacy-notice">Privacy</a>
-            </li>
-            <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;3&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help/cookies">Cookies</a>
-            </li>
-            <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;4&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help/accessibility-statement">Accessibility statement</a>
-            </li>
-            <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;5&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/contact">Contact</a>
-            </li>
-            <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;6&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help/terms-conditions">Terms and conditions</a>
-            </li>
-            <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" lang="cy" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;7&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/cymraeg">Rhestr o Wasanaethau Cymraeg</a>
-            </li>
-            <li class="govuk-footer__inline-list-item">
-              <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;8&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
-            </li>
+            {% endfor %}
         </ul>
         <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
           <svg

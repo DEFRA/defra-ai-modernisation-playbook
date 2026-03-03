@@ -495,6 +495,31 @@ h2 {
   display: inline-block;
 }
 
+/* Visually hidden (accessible to screen readers) */
+.govuk-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Footer inline list */
+.govuk-footer__inline-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 15px;
+}
+
+.govuk-footer__inline-list-item {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
 /* Footer links */
 .govuk-footer__link {
   color: #1d70b8;
