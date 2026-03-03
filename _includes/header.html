@@ -1,0 +1,15 @@
+{% if site.logo %}
+<div class="logo-container">
+  <a href="{{ '/' | relative_url }}">
+    <img class="logo-light" src="{{site.logo | relative_url}}" alt="Defra Logo" />
+    <img class="logo-dark" src="{{ "/assets/images/defra-logo-white.svg" | relative_url }}" alt="Defra Logo" />
+  </a>
+</div>
+{% endif %}
+
+<header>
+  <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+  <p>{{ site.description | default: site.github.project_tagline }}</p>
+</header>
+
+{% include theme-toggle.html %}
