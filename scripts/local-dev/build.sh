@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Build script for Jekyll site
 # This script builds the Jekyll site for production testing

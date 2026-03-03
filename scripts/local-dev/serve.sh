@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Serve script for Jekyll local development
 # This script starts the Jekyll development server with live reload

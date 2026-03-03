@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Setup script for Jekyll local development
 # This script installs the necessary dependencies to run the Jekyll site locally
