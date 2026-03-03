@@ -413,8 +413,7 @@ vendor/
 Gemfile.lock
 
 # Obsidian
-.obsidian/workspace.json
-.obsidian/workspace/
+.obsidian/
 
 # OS generated files
 .DS_Store
