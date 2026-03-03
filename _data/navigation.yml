@@ -1,0 +1,57 @@
+- title: "1. Welcome"
+  url: /
+- title: "2. Responsible Practices"
+  url: /pages/responsible-practices
+  children:
+    - title: "2.1. Ethics"
+      url: /pages/responsible-practices/ethics
+    - title: "2.2. Sustainability"
+      url: /pages/responsible-practices/sustainability
+    - title: "2.3. Security"
+      url: /pages/responsible-practices/security
+- title: "3. Getting Started"
+  url: /pages/getting-started
+  children:
+    - title: "3.1. Workflow"
+      url: /pages/getting-started/workflow
+    - title: "3.2. The Four Pillars"
+      url: /pages/getting-started/the-four-pillars
+    - title: "3.3. Choosing Models"
+      url: /pages/getting-started/choosing-models
+    - title: "3.4. Mindset"
+      url: /pages/getting-started/ai-working-mindset
+    - title: "3.5. Project Setup"
+      url: /pages/getting-started/project-setup
+- title: "4. Generating Requirements"
+  url: /pages/generating-requirements
+  children:
+    - title: "4.1. Product Requirements"
+      url: /pages/generating-requirements/product-requirements
+    - title: "4.2. Technical Requirements"
+      url: /pages/generating-requirements/technical-requirements
+- title: "5. Feature Development"
+  url: /pages/feature-development
+  children:
+    - title: "5.1. Development"
+      url: /pages/feature-development/development
+    - title: "5.2. Test Driven Development"
+      url: /pages/feature-development/test-driven-development
+    - title: "5.3. Testing"
+      url: /pages/feature-development/testing
+    - title: "5.4. Refactoring"
+      url: /pages/feature-development/refactoring
+    - title: "5.5. Documentation"
+      url: /pages/feature-development/documentation
+- title: "6. Appendix"
+  url: /pages/appendix
+  children:
+    - title: "6.1. Prompt Library"
+      url: /pages/appendix/prompt-library
+    - title: "6.2. Rules and Instructions for AI"
+      url: /pages/appendix/rules-for-ai
+    - title: "6.3. Allowed Tools for Defra Pilot"
+      url: /pages/appendix/defra-approved-tools
+    - title: "6.4. Defra MCP Guidance"
+      url: /pages/appendix/defra-mcp-guidance
+    - title: "6.5. Contributing"
+      url: /pages/appendix/CONTRIBUTING
