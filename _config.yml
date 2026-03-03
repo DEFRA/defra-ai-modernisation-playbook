@@ -3,6 +3,14 @@ title: Defra AI in the SDLC Playbook
 description: This playbook is a living document that aims to provide guidance on best practices for ways of working, tooling, and context-specific use cases for the use of AI in the Software Development Lifecycle (SDLC) tailored to Defra's unique needs and challenges.
 baseurl: '/defra-ai-sdlc'
 logo: /assets/images/defra-logo.svg
+author: "Defra AI Capabilities and Enablement"
+lang: "en-GB"
+twitter:
+  card: summary
+social:
+  name: "Department for Environment, Food & Rural Affairs"
+  links:
+    - "https://github.com/defra"
 version: 2.0.3
 css_version: 2.0.3
 
