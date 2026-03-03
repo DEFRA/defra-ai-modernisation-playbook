@@ -1,0 +1,29 @@
+// Layout overrides — the 768px breakpoint that fills the gap between
+// the 960px and 480px breakpoints in defra-styles.scss.
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    margin: 0 auto !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .navigation, .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0.5rem !important;
+    margin: 0 auto !important;
+  }
+
+  .content * {
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
+  }
+}
