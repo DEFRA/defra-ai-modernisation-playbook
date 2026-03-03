@@ -64,11 +64,11 @@ a:link, a:visited {
 
 a:hover, a:focus {
   color: #003078;
+  font-weight: inherit;
 }
 
 a:active {
   color: #0b0c0c;
-  background-color: #ffdd00; // GOV.UK yellow
 }
 
 // Theme toggle styles
@@ -520,20 +520,22 @@ h2 {
   margin-bottom: 5px;
 }
 
-/* Footer links */
+/* Footer links — standard link styling */
 .govuk-footer__link {
   color: #1d70b8;
-  text-decoration: none;
-}
-
-.govuk-footer__link:hover {
-  color: #003078;
   text-decoration: underline;
+
+  &:hover {
+    color: #003078;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
 }
 
 /* Copyright logo */
 .govuk-footer__copyright-logo {
-  font-weight: bold;
   font-size: 16px;
   display: block;
   margin-top: 10px;
@@ -545,11 +547,6 @@ h2 {
   font-weight: bold;
 }
 
-// Ensure all links have an underline on hover
-.govuk-footer__link:hover, a:hover, a:focus {
-  color: #003078;
-  text-decoration: underline;
-}
 
 pre.highlight {
   color: var(--govuk-black);
