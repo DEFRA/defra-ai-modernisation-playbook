@@ -1,8 +1,6 @@
-# Defra AI SDLC Playbook
+# Playbook Template
 
-A Jekyll site providing guidance on best practices for using AI in the Software Development Lifecycle (SDLC), tailored to Defra's needs and challenges.
-
-**Live site:** [defra.github.io/defra-ai-sdlc](https://defra.github.io/defra-ai-sdlc)
+A reusable Jekyll playbook template for building team guidance, standards, and documentation sites. Fork this repository and customise it to create your own playbook.
 
 ## Prerequisites
 
@@ -31,11 +29,11 @@ bundle install
 bundle exec jekyll serve --livereload
 ```
 
-The site will be available at `http://localhost:4000/defra-ai-sdlc/`.
+The site will be available at `http://localhost:4000/playbook/`.
 
 ## Contributing
 
-We welcome contributions from the Defra community. See the [Contributing](pages/appendix/CONTRIBUTING.md) page for guidance.
+See the [Contributing](pages/contributing/) section for guidance on adding and maintaining content.
 
 ## Licence
 

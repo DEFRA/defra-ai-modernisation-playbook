@@ -46,7 +46,6 @@ defaults:
 # Exclude files from processing
 exclude:
   - .obsidian/
-  - defra-ai-sdlc-team/
   - Gemfile
   - Gemfile.lock
   - node_modules/

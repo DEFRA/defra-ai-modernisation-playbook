@@ -17,7 +17,7 @@ This folder contains scripts to help you run the Jekyll site locally for develop
 
 3. **Open your browser to:**
    ```
-   http://localhost:4000/ai-sdlc-tool-guidance
+   http://localhost:4000/playbook/
    ```
 
 ## Scripts Overview
@@ -31,7 +31,7 @@ This folder contains scripts to help you run the Jekyll site locally for develop
 ### `serve.sh`
 - Starts Jekyll development server
 - Enables live reload (changes automatically refresh browser)
-- Serves on `http://localhost:4000/ai-sdlc-tool-guidance`
+- Serves on `http://localhost:4000/playbook/`
 - Use this for daily development
 
 ### `build.sh`

@@ -3,18 +3,18 @@ description:
 globs: 
 alwaysApply: true
 ---
-# Voice and Tone Rules for Defra AI SDLC Playbook
+# Voice and Tone Rules for Playbook Template
 
 ## Context
-This is a playbook for the UK Government Department for Environment, Food & Rural Affairs (Defra) that outlines the best practices for using GenAI tools and techniques in the Software Development Lifecycle (SDLC). This is a playbook for professional use.
+This is a reusable playbook template for the UK Government Department for Environment, Food & Rural Affairs (Defra). It provides a starting point for teams to build their own guidance and documentation sites.
 
 ## Purpose
-- The purpose of this playbook is to provide a lightweight practical guide on how to use GenAI tools and techniques to support professionals with their roles and tasks
-- It explains the techniques achieve the best outcomes with GenAI
-- It does NOT prescribe how professionals should actually do their roles
+- Provide a structured, branded template for creating team playbooks
+- Guide contributors on how to write and organise content
+- It does NOT prescribe specific domain content
 
-## Audience 
-Experienced Professionals working in Digital Services for the UK Government (GDS), who are new to using GenAI in the SDLC.
+## Audience
+Professionals working in Digital Services for the UK Government (GDS).
 
 ## Core Principles
 - Write for both technical and non-technical government staff
