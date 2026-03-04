@@ -1,8 +1,8 @@
-# Copilot Instructions for Playbook Template
+# Copilot Instructions for AI-Enabled Legacy Modernisation Playbook
 
 ## Project Overview
 
-This is a **Jekyll-based documentation site** (GitHub Pages) serving as a reusable playbook template. Fork it and customise the content to create your own team playbook.
+This is a **Jekyll-based documentation site** (GitHub Pages) for Defra's AI-enabled legacy application modernisation playbook. It provides step-by-step guidance on using AI-assisted reverse engineering to produce Product Requirements Documents from legacy application artefacts.
 
 **Key facts:**
 - Jekyll theme: `jekyll-theme-minimal`
@@ -12,10 +12,14 @@ This is a **Jekyll-based documentation site** (GitHub Pages) serving as a reusab
 
 ```
 pages/               # Main content organized by topic
-  getting-started/   # How the playbook works and how to customise it
-  guides/            # Example guide pages to use as templates
+  overview/          # About the playbook, the team, stakeholders
+  process/           # Step-by-step reverse engineering process
+  tooling/           # AI tooling guidance (Claude Code, Copilot, Cursor)
+  output-reference/  # Reference for each output artefact
+  considerations/    # Governance, PII, quality, cost caveats
+  glossary/          # Terminology
   contributing/      # How to add and maintain content
-_layouts/            # Jekyll layouts (default.html is main template)
+_layouts/            # Jekyll layouts (default.html is main layout)
 _sass/               # SCSS styles (defra-styles.scss has GOV.UK colours)
 assets/css/          # Main stylesheet importing theme + defra-styles
 ```
