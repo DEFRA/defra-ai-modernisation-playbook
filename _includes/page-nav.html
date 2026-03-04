@@ -1,0 +1,67 @@
+{% comment %}
+  Build a flat list of pages from the navigation hierarchy.
+  Parent entries whose URL duplicates their first child are skipped
+  to avoid duplicate entries in the sequence.
+{% endcomment %}
+
+{% assign flat_nav = "" | split: "" %}
+
+{% for item in site.data.navigation %}
+  {% assign skip_parent = false %}
+  {% if item.children and item.children.size > 0 %}
+    {% if item.url == item.children[0].url %}
+      {% assign skip_parent = true %}
+    {% endif %}
+  {% endif %}
+
+  {% unless skip_parent %}
+    {% assign entry = item.url | prepend: "||" | prepend: item.title %}
+    {% assign flat_nav = flat_nav | push: entry %}
+  {% endunless %}
+
+  {% if item.children %}
+    {% for child in item.children %}
+      {% assign entry = child.url | prepend: "||" | prepend: child.title %}
+      {% assign flat_nav = flat_nav | push: entry %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign current_index = -1 %}
+{% for entry in flat_nav %}
+  {% assign parts = entry | split: "||" %}
+  {% assign entry_url = parts[1] %}
+  {% if page.url == entry_url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index >= 0 %}
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+  {% assign last_index = flat_nav.size | minus: 1 %}
+
+  <nav class="page-nav" aria-label="Page navigation">
+    {% if current_index > 0 %}
+      {% assign prev_entry = flat_nav[prev_index] %}
+      {% assign prev_parts = prev_entry | split: "||" %}
+      <a class="page-nav__link page-nav__link--prev" href="{{ prev_parts[1] | relative_url }}">
+        <span class="page-nav__arrow">&larr;</span>
+        <span class="page-nav__label">Previous</span>
+        <span class="page-nav__title">{{ prev_parts[0] }}</span>
+      </a>
+    {% else %}
+      <span class="page-nav__link page-nav__link--prev"></span>
+    {% endif %}
+
+    {% if current_index < last_index %}
+      {% assign next_entry = flat_nav[next_index] %}
+      {% assign next_parts = next_entry | split: "||" %}
+      <a class="page-nav__link page-nav__link--next" href="{{ next_parts[1] | relative_url }}">
+        <span class="page-nav__arrow">&rarr;</span>
+        <span class="page-nav__label">Next</span>
+        <span class="page-nav__title">{{ next_parts[0] }}</span>
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}
