@@ -2,25 +2,28 @@
 title: Home
 ---
 
-# Playbook Template
+# AI-Enabled Legacy Modernisation Playbook
 
 Version {{ site.version }}
 
-This is a reusable playbook template for building team guidance, standards, and documentation sites. It comes with Defra branding, a responsive sidebar navigation, dark mode support, and a GovUK-style footer out of the box.
+This playbook describes how Defra's Legacy Application Programme (LAP) uses AI-assisted reverse engineering to produce Product Requirements Documents (PRDs) from legacy application artefacts. It covers the end-to-end process — from gathering source material through automated analysis to a signed-off PRD ready for implementation planning.
 
-## How to use this template
-
-1. Fork this repository
-2. Update `_config.yml` with your playbook's title, description, and author
-3. Replace the placeholder pages under `pages/` with your own content
-4. Update `_data/navigation.yml` to reflect your page structure
-
-Each page uses simple Markdown with a `title` in the front matter. The layout and navigation are handled automatically.
+```mermaid
+flowchart LR
+    A["Gather Inputs"] --> B["Content Curation"]
+    B --> C["Review Curated Outputs"]
+    C --> D["Analysis & PRD Generation"]
+    D --> E["PRD Review & Sign-off"]
+```
 
 ## Sections
 
-- [Getting Started]({{ "/pages/getting-started/" | relative_url }}) — start here to understand the playbook structure
-- [Guides]({{ "/pages/guides/" | relative_url }}) — example guide pages to use as templates
-- [Contributing]({{ "/pages/contributing/" | relative_url }}) — how to add and maintain content
+- [Overview]({{ "/pages/overview/" | relative_url }}) — what this playbook covers, team structure, and stakeholder roles
+- [Process]({{ "/pages/process/" | relative_url }}) — step-by-step guide through each phase of the reverse engineering process
+- [Tooling]({{ "/pages/tooling/" | relative_url }}) — AI coding assistants, plugins, and project directory structure
+- [Output Reference]({{ "/pages/output-reference/" | relative_url }}) — detailed descriptions of each artefact the process produces
+- [Considerations & Caveats]({{ "/pages/considerations/" | relative_url }}) — information governance, PII handling, AI quality, and costs
+- [Glossary]({{ "/pages/glossary/" | relative_url }}) — key terms and definitions
+- [Contributing]({{ "/pages/contributing/" | relative_url }}) — how to propose changes to this playbook
 
-See the [Contributing]({{ "/pages/contributing/" | relative_url }}) guide for details on adding new pages and sections.
+Start with the [Overview]({{ "/pages/overview/" | relative_url }}) for context, then follow the [Process]({{ "/pages/process/" | relative_url }}) guide.

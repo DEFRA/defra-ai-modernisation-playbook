@@ -1,0 +1,61 @@
+---
+title: "Phase 2: Content Curation"
+permalink: /pages/process/content-curation/
+---
+
+# Phase 2: Content Curation
+
+The `digital-content-curator` agent prepares raw inputs for downstream analysis. It transforms screenshots and transcripts into structured, analysis-ready formats while preserving all relevant content.
+
+## Sub-processes
+
+### 1. Screenshot to HTML Mockup
+
+The `image-to-html` skill reads each screenshot and produces a semantic, unstyled HTML file that captures all visible UI elements and text. Any PII visible in the original screenshot is replaced with fake equivalents.
+
+**Output:** `html/<name>.html`
+
+### 2. Transcript to Curated Transcript
+
+The `curate-transcript` skill removes off-topic content (project management, scheduling, social chat) while preserving domain knowledge, application walkthroughs, and technical detail verbatim.
+
+**Output:** `transcripts/<name>_curated.txt`
+
+## How to Run
+
+Invoke the `digital-content-curator` agent via your AI coding assistant with the appropriate plugin or extension loaded. The agent discovers all raw files in the `screenshots/` and `transcripts/` directories and processes them automatically. See [Tooling]({{ '/pages/tooling/' | relative_url }}) for setup instructions.
+
+## What It Produces
+
+- `html/*.html` — semantic HTML mockups of every screenshot
+- `transcripts/*_curated.txt` — curated transcripts with off-topic content removed
+
+## Workaround for Large File Sets
+
+When there are many screenshots or transcripts (50+), the curator agent may exhaust its turn budget. In this case, bypass the agent and invoke skills directly from a bash loop:
+
+```bash
+#!/usr/bin/env bash
+CLAUDE="claude --plugin-dir /path/to/plugin --model claude-sonnet-4-20250514 --dangerously-skip-permissions"
+
+for img in screenshots/*.{png,jpg,jpeg,gif,bmp,webp}; do
+  [ -f "$img" ] || continue
+  name="${img##*/}"; name="${name%.*}"
+  [ -f "html/${name}.html" ] && echo "Skipping $img (already done)" && continue
+  echo "Processing $img..."
+  $CLAUDE -p "/image-to-html $img" --allowedTools "Read,Write,Bash(mkdir*)"
+done
+
+for txt in transcripts/*.txt; do
+  [ -f "$txt" ] || continue
+  [[ "$txt" == *_curated.txt ]] && continue
+  name="${txt##*/}"; name="${name%.txt}"
+  [ -f "transcripts/${name}_curated.txt" ] && echo "Skipping $txt (already done)" && continue
+  echo "Processing $txt..."
+  $CLAUDE -p "/curate-transcript $txt" --allowedTools "Read,Edit,Bash(mkdir*;cp*)"
+done
+```
+
+The skip logic makes this resumable — re-run the script and it picks up where it left off.
+
+For full details on the available skills and tooling, see the [Tooling]({{ '/pages/tooling/' | relative_url }}) section.

@@ -1,16 +1,73 @@
 - title: "1. Home"
   url: /
-- title: "2. Getting Started"
-  url: /pages/getting-started/
+- title: "2. Overview"
+  url: /pages/overview/
   children:
-    - title: "2.1. First Steps"
-      url: /pages/getting-started/first-steps/
-    - title: "2.2. Next Steps"
-      url: /pages/getting-started/next-steps/
-- title: "3. Guides"
-  url: /pages/guides/
+    - title: "2.1. About This Playbook"
+      url: /pages/overview/
+    - title: "2.2. The Team"
+      url: /pages/overview/the-team/
+    - title: "2.3. Application Stakeholders"
+      url: /pages/overview/stakeholders/
+- title: "3. Process"
+  url: /pages/process/
   children:
-    - title: "3.1. Example Guide"
-      url: /pages/guides/example-guide/
-- title: "4. Contributing"
+    - title: "3.1. Process Overview"
+      url: /pages/process/
+    - title: "3.2. Gather Inputs"
+      url: /pages/process/gather-inputs/
+    - title: "3.3. Content Curation"
+      url: /pages/process/content-curation/
+    - title: "3.4. Review Curated Outputs"
+      url: /pages/process/review-curated-outputs/
+    - title: "3.5. Analysis & PRD Generation"
+      url: /pages/process/analysis-and-prd/
+    - title: "3.6. PRD Review & Sign-off"
+      url: /pages/process/prd-review-and-signoff/
+- title: "4. Tooling"
+  url: /pages/tooling/
+  children:
+    - title: "4.1. Claude Code Plugin"
+      url: /pages/tooling/claude-code/
+    - title: "4.2. GitHub Copilot (TBD)"
+      url: /pages/tooling/copilot/
+    - title: "4.3. Cursor (TBD)"
+      url: /pages/tooling/cursor/
+    - title: "4.4. Project Directory Structure"
+      url: /pages/tooling/directory-structure/
+- title: "5. Output Reference"
+  url: /pages/output-reference/
+  children:
+    - title: "5.1. HTML Mockups"
+      url: /pages/output-reference/html-mockups/
+    - title: "5.2. Curated Transcripts"
+      url: /pages/output-reference/curated-transcripts/
+    - title: "5.3. Domain Analysis"
+      url: /pages/output-reference/domain-analysis/
+    - title: "5.4. Interaction Analysis"
+      url: /pages/output-reference/interaction-analysis/
+    - title: "5.5. Application Analysis"
+      url: /pages/output-reference/application-analysis/
+    - title: "5.6. Database Analysis"
+      url: /pages/output-reference/database-analysis/
+    - title: "5.7. Product Requirements Document"
+      url: /pages/output-reference/prd/
+- title: "6. Considerations & Caveats"
+  url: /pages/considerations/
+  children:
+    - title: "6.1. Information Governance"
+      url: /pages/considerations/information-governance/
+    - title: "6.2. PII Handling"
+      url: /pages/considerations/pii-handling/
+    - title: "6.3. AI Output Quality"
+      url: /pages/considerations/ai-quality/
+    - title: "6.4. Cost & Token Usage"
+      url: /pages/considerations/cost-and-tokens/
+    - title: "6.5. Model Selection"
+      url: /pages/considerations/model-selection/
+    - title: "6.6. Troubleshooting"
+      url: /pages/considerations/troubleshooting/
+- title: "7. Glossary"
+  url: /pages/glossary/
+- title: "8. Contributing"
   url: /pages/contributing/

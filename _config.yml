@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: Playbook Template
-description: A reusable playbook template for building team guidance, standards, and documentation sites. Fork this repository and customise it to create your own playbook.
+title: AI-Enabled Legacy Modernisation Playbook
+description: A step-by-step guide to using AI-assisted reverse engineering to produce Product Requirements Documents from legacy application artefacts, developed by Defra's Legacy Application Programme.
 baseurl: '/defra-ai-modernisation-playbook'
 logo: /assets/images/defra-logo.svg
 author: "Defra"
