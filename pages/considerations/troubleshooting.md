@@ -7,7 +7,29 @@ permalink: /pages/considerations/troubleshooting/
 
 The `digital-content-curator` agent processes files within a single AI session. When there are many screenshots or transcripts (50+), the session may exhaust its turn budget before finishing.
 
-**Solution**: bypass the agent and invoke skills directly from a bash loop. See [Content Curation]({{ "/pages/process/content-curation/" | relative_url }}) for the script.
+**Solution**: bypass the agent and invoke each skill directly from a bash loop. Because each invocation processes a single file, this avoids the turn-budget limit entirely. The skip logic checks for existing output files, so you can safely re-run the script and it picks up where it left off.
+
+```bash
+#!/usr/bin/env bash
+CLAUDE="claude --plugin-dir /path/to/plugin --model claude-sonnet-4-20250514 --dangerously-skip-permissions"
+
+for img in screenshots/*.{png,jpg,jpeg,gif,bmp,webp}; do
+  [ -f "$img" ] || continue
+  name="${img##*/}"; name="${name%.*}"
+  [ -f "html/${name}.html" ] && echo "Skipping $img (already done)" && continue
+  echo "Processing $img..."
+  $CLAUDE -p "/image-to-html $img" --allowedTools "Read,Write,Bash(mkdir*)"
+done
+
+for txt in transcripts/*.txt; do
+  [ -f "$txt" ] || continue
+  [[ "$txt" == *_curated.txt ]] && continue
+  name="${txt##*/}"; name="${name%.txt}"
+  [ -f "transcripts/${name}_curated.txt" ] && echo "Skipping $txt (already done)" && continue
+  echo "Processing $txt..."
+  $CLAUDE -p "/curate-transcript $txt" --allowedTools "Read,Edit,Bash(mkdir*;cp*)"
+done
+```
 
 ### Mermaid diagram validation failures
 
@@ -22,7 +44,7 @@ The analysis agents produce Mermaid diagrams that may occasionally have syntax e
 
 If an agent runs out of turns before finishing, the output file may be incomplete.
 
-**Solution**: re-run the agent. All agents regenerate their output from scratch on each run — there is no risk of corrupted partial output.
+**Solution**: re-run the agent. Analysis agents regenerate their output from scratch on each run — there is no risk of corrupted partial output. For the content curation agent, which processes many files individually, use the resumable bash script described [above](#content-curation-stalls-on-large-file-sets) instead.
 
 ### Plugin or extension not loading
 
