@@ -13,6 +13,8 @@ The `digital-content-curator` agent prepares raw inputs for downstream analysis.
 
 The `image-to-html` skill reads each screenshot and produces a semantic, unstyled HTML file that captures all visible UI elements and text. Any PII visible in the original screenshot is replaced with fake equivalents.
 
+> **Note:** Converting screenshots to HTML also reduces the AI workload in later phases, as the model can parse structured text far more efficiently than images. This contributes to more sustainable AI use — see the [DEFRA AI Playbook: Sustainability](https://github.com/DEFRA/defra-ai-sdlc/blob/main/pages/responsible-practices/sustainability.md) guidance for more detail.
+
 **Output:** `html/<name>.html`
 
 ### 2. Transcript to Curated Transcript
