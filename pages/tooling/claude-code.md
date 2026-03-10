@@ -13,7 +13,7 @@ You must have Claude Code installed and authenticated before using the plugin.
 
 See the official Claude Code documentation: [https://docs.anthropic.com/en/docs/claude-code](https://docs.anthropic.com/en/docs/claude-code)
 
-You must also clone the plugin from its GitHub repository:
+This plugin is not published on the marketplace yet, and in the interim, you can clone the plugin from its GitHub repository:
 
 ```bash
 git clone https://github.com/DEFRA/claude-legacy-reveng-plugin
