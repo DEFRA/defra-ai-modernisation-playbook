@@ -11,17 +11,17 @@ The first step is to collect the three mandatory input types that feed every sub
 
 ### 1. Screenshots
 
-Stakeholders provide UI screenshots of the legacy application. These should cover all screens and key states, including error screens, confirmation dialogs, and admin views.
+Stakeholders provide UI screenshots of the legacy application. These should cover all screens and key states, including error screens, confirmation dialogs, and admin views. Place all screenshots in the `screenshots/` directory.
 
 Supported formats: PNG, JPG, JPEG, GIF, BMP, or WebP.
 
 ### 2. Source Code
 
-Stakeholders provide access to the codebase, which is placed under `src/`. The plugin currently supports .NET applications (`.sln`, `.vbproj`, `.csproj`, `.vb`, `.cs`, `.aspx`, `.ascx`, `.config`, `.sql`, `.sqlproj`, etc.) but the overall process applies to any technology stack — plugin extension is needed for other languages.
+Stakeholders provide access to the codebase. The plugin currently supports .NET applications (`.sln`, `.vbproj`, `.csproj`, `.vb`, `.cs`, `.aspx`, `.ascx`, `.config`, `.sql`, `.sqlproj`, etc.) but the overall process applies to any technology stack — plugin extension is needed for other languages. Place all source code in the `src/` directory.
 
 ### 3. Transcripts
 
-Recorded stakeholder interviews are auto-transcribed to plain text (`.txt`). Transcripts must be purged of all personally identifiable information (PII) before processing.
+Recorded stakeholder interviews are auto-transcribed to plain text (`.txt`). Transcripts must be purged of all personally identifiable information (PII) before processing. Place all transcript files in the `transcripts/` directory.
 
 ## Format Requirements
 

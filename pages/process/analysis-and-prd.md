@@ -55,4 +55,12 @@ flowchart LR
 
 The `product-manager` reads all four analysis files, cross-references them, and produces `output/PRD.md` — a comprehensive Product Requirements Document structured around behaviour, domain model, workflows, and business rules.
 
+## How to Run
+
+Invoke the `product-manager` agent via your AI coding assistant with the appropriate plugin or extension loaded. The agent orchestrates all four analyst agents automatically and synthesises their outputs into `output/PRD.md`. See [Tooling]({{ '/pages/tooling/' | relative_url }}) for setup instructions.
+
+For example:
+
+> Please could you run the `product-manager` agent to analyse the application and produce the PRD? Thank you.
+
 For full agent definitions and configuration, see the [plugin repository]({{ '/pages/tooling/' | relative_url }}).

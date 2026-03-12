@@ -27,6 +27,10 @@ The `curate-transcript` skill removes off-topic content (project management, sch
 
 Invoke the `digital-content-curator` agent via your AI coding assistant with the appropriate plugin or extension loaded. The agent discovers all raw files in the `screenshots/` and `transcripts/` directories and processes them automatically. See [Tooling]({{ '/pages/tooling/' | relative_url }}) for setup instructions.
 
+For example:
+
+> Please could you run the `digital-content-curator` agent to prepare all the screenshots and transcripts for analysis? Thank you.
+
 ## What It Produces
 
 - `html/*.html` — semantic HTML mockups of every screenshot
