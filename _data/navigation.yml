@@ -29,7 +29,7 @@
   children:
     - title: "4.1. Claude Code Plugin"
       url: /pages/tooling/claude-code/
-    - title: "4.2. GitHub Copilot (TBD)"
+    - title: "4.2. GitHub Copilot"
       url: /pages/tooling/copilot/
     - title: "4.3. Cursor (TBD)"
       url: /pages/tooling/cursor/
