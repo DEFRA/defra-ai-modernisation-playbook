@@ -7,35 +7,49 @@ permalink: /pages/tooling/copilot/
 
 This page covers the GitHub Copilot plugin that powers the reverse engineering process. The plugin provides a set of skills (slash commands) and agents (autonomous subagents) that together analyse legacy applications and produce structured deliverables.
 
+The plugin source is available at: [https://github.com/DEFRA/claude-legacy-reveng-plugin](https://github.com/DEFRA/claude-legacy-reveng-plugin)
+
 ## Prerequisites
 
-You must have GitHub Copilot installed and authenticated before using the plugin.
-Instructions on how to set this up within VSCode can be found in their official documentation: [https://code.visualstudio.com/docs/copilot/setup](https://code.visualstudio.com/docs/copilot/setup)
+You must have GitHub Copilot installed and authenticated in VSCode before using the plugin.
 
-We have assumed users will be using GitHub Copilot within VSCode.
-Once setup, you will need to enable the following settings:
+See the official setup guide: [https://code.visualstudio.com/docs/copilot/setup](https://code.visualstudio.com/docs/copilot/setup)
 
-chat.customAgentInSubagent.enabled
-chat.useAgentSkills
+Once installed, enable the following VSCode settings (search for each in **Settings** and tick the checkbox):
 
-Navigate to Settings, search for the above one by one and tick the box to enable to enable each setting.
+- `chat.customAgentInSubagent.enabled`
+- `chat.useAgentSkills`
+
+## Installing the plugin
+
+The plugin repository includes an installer script that configures everything for you. From the root of your legacy application:
+
+```bash
+# Download the installer script
+curl -O https://raw.githubusercontent.com/DEFRA/claude-legacy-reveng-plugin/main/scripts/install-as-copilot-plugin.sh
+
+# Run it
+chmod +x install-as-copilot-plugin.sh
+./install-as-copilot-plugin.sh
+```
+
+This pulls down the plugin configuration into your project. You can remove the installer script afterwards:
+
+```bash
+rm install-as-copilot-plugin.sh
+```
 
 ## Running with the plugin
 
-We've setup a bash script to make life as easy as possible.
-Copy the script found in the repository at `scripts/install-as-copilot-plugin.sh` into the root of your legacy application.
-Execute the script from within your legacy application. E.g. `./install-as-copilot-plugin.sh`
+Open a new GitHub Copilot chat window in VSCode. Using the dropdowns beneath the prompt area:
 
-This will pull down and setup the necessary config to enable this plugin to work with GitHub Copilot.
-You can now remove the `install-as-copilot-plugin.sh` from your legacy app folder if you wish.
-
-Open up a new GitHub Copilot chat window within VSCode and:
-
-1. Select digital-content-curator as the agent
-2. Select Claude Sonnet 4 as the agent model
-
-This is done via the dropdowns just underneath your prompt area in the chat window.
+1. Select **digital-content-curator** as the agent
+2. Select **Claude Sonnet 4** as the agent model
 
 Proceed with the playbook instructions on curating the data.
 
-When moving onto the PRD generation, ensure to select the product-manager agent before running the prompt from the playbook.
+When moving onto PRD generation, select the **product-manager** agent before running the prompt from the playbook.
+
+## Further information
+
+Refer to the [plugin repository](https://github.com/DEFRA/claude-legacy-reveng-plugin) for full documentation, including detailed agent and skill definitions.
