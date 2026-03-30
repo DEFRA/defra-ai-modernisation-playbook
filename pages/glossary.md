@@ -9,6 +9,7 @@ permalink: /pages/glossary/
 | BDD | Behaviour-Driven Development — a method of specifying software behaviour using Given/When/Then scenarios |
 | Bounded context | A DDD concept — a boundary within which a domain model and its language are consistent and unambiguous |
 | Claude Code | Anthropic's command-line AI coding assistant |
+| CLAUDE.md | A project-level configuration file that defines operational guardrails for Claude Code — build commands, conventions, and rules |
 | Content curation | The process of converting raw screenshots and transcripts into structured, analysis-ready formats |
 | Context map | A DDD concept — a diagram showing the relationships between bounded contexts |
 | Curated transcript | An interview transcript with off-topic content removed, preserving domain knowledge verbatim |
@@ -20,8 +21,11 @@ permalink: /pages/glossary/
 | Mermaid | A diagramming language that renders charts and diagrams from text-based definitions |
 | PII | Personally Identifiable Information — any data that could identify a specific individual |
 | Plugin | An extension for an AI coding assistant that adds skills, agents, and hooks for a specific domain |
-| PRD | Product Requirements Document — the final deliverable of the reverse engineering process |
+| PRD | Product Requirements Document — the comprehensive requirements document produced by the reverse engineering process |
+| Ralph | A CLI tool that runs Claude Code in autonomous loops to build software feature by feature |
+| Ralph loop | An autonomous build cycle where each iteration spawns a fresh Claude Code session to implement, test, and commit a single task |
 | Reverse engineering | The process of analysing an existing system to understand its behaviour, structure, and requirements |
+| Sandbox | An isolated devcontainer environment in which ralph runs Claude Code safely with unrestricted permissions |
 | Skill | A reusable command defined in a plugin or extension that performs a specific task |
 | Subdomain | A DDD concept — a distinct area of the business domain, classified as core, supporting, or generic |
 | T-shaped team | A team where members have deep expertise in one area but can flex across other roles |
