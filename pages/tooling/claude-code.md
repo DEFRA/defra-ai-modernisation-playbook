@@ -42,6 +42,7 @@ Skills are slash commands that perform focused, single-purpose tasks.
 | `image-to-html` | Converts a legacy UI screenshot into semantic, unstyled mockup HTML |
 | `curate-transcript` | Removes off-topic content from interview transcripts whilst preserving domain knowledge verbatim |
 | `validate-mermaid` | Validates all Mermaid diagram blocks in a markdown file and fixes broken diagrams in place |
+| `prd-to-features` | Decomposes a PRD into individually deliverable feature specifications with user stories, wireframes, and acceptance criteria |
 
 ## Agents
 
@@ -66,6 +67,7 @@ graph LR
         i2h{{image-to-html}}
         ct{{curate-transcript}}
         vm{{validate-mermaid}}
+        p2f{{prd-to-features}}
     end
 
     subgraph Agents
@@ -88,6 +90,9 @@ graph LR
     ba -->|invokes| vm
     ia -->|invokes| vm
     pm -->|invokes| vm
+
+    p2f -->|reads| prd[output/PRD.md]
+    p2f -->|writes| ft[output/features/FT-*.md]
 ```
 
 ## Further information

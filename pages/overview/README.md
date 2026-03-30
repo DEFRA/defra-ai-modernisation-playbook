@@ -19,7 +19,7 @@ The process brings these inputs together and produces a comprehensive PRD that c
 
 ## Scope
 
-This playbook covers everything from **gathering inputs** through to a **signed-off PRD**. It is a complete guide to the reverse engineering and requirements-capture phase of legacy modernisation.
+This playbook covers everything from **gathering inputs** through to a **signed-off PRD** and its **decomposition into feature specifications**. It is a complete guide to the reverse engineering and requirements-capture phase of legacy modernisation.
 
 The build and implementation phase is **out of scope**. Guidance on designing, developing, and deploying a modern replacement will be added in future iterations of this playbook.
 

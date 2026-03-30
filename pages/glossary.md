@@ -13,6 +13,8 @@ permalink: /pages/glossary/
 | Context map | A DDD concept — a diagram showing the relationships between bounded contexts |
 | Curated transcript | An interview transcript with off-topic content removed, preserving domain knowledge verbatim |
 | DDD | Domain-Driven Design — a software design approach that models software around business domains |
+| Feature decomposition | The process of breaking a PRD down into individually deliverable feature specifications |
+| Feature specification | A self-contained document describing a single deliverable feature, including user stories, wireframes, acceptance criteria, and effort estimates |
 | HTML mockup | A semantic, unstyled HTML file representing the UI of a legacy application screen |
 | LAP | Legacy Application Programme — Defra's programme for modernising legacy systems |
 | Mermaid | A diagramming language that renders charts and diagrams from text-based definitions |

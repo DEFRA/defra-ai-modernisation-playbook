@@ -5,7 +5,7 @@ permalink: /pages/process/
 
 # Process Overview
 
-The modernisation playbook follows a five-phase process that takes legacy application artefacts and produces a comprehensive Product Requirements Document (PRD). The diagram below shows the end-to-end flow.
+The modernisation playbook follows a six-phase process that takes legacy application artefacts and produces a comprehensive Product Requirements Document (PRD) and individually deliverable feature specifications. The diagram below shows the end-to-end flow.
 
 ```mermaid
 flowchart TB
@@ -42,11 +42,14 @@ flowchart TB
         PM --> PRD(["PRD.md"])
     end
 
+    PRD -->|"/prd-to-features"| p2f{{prd-to-features}}
+    p2f --> features(["output/features/FT-*.md"])
+
     src --> appdev & dbanalyst
     html & curated --> ba & ia
 ```
 
-## The Five Phases
+## The Six Phases
 
 1. **[Gather Inputs]({{ '/pages/process/gather-inputs/' | relative_url }})** — collect screenshots, source code, and stakeholder interview transcripts. These are the raw materials that feed every subsequent step.
 
@@ -57,6 +60,8 @@ flowchart TB
 4. **[Analysis & PRD Generation]({{ '/pages/process/analysis-and-prd/' | relative_url }})** — four specialist AI analyst agents examine all inputs in parallel, and a product-manager agent synthesises their outputs into a comprehensive PRD.
 
 5. **[PRD Review & Sign-off]({{ '/pages/process/prd-review-and-signoff/' | relative_url }})** — the team and stakeholders review and approve the PRD, marking the end of the reverse engineering phase.
+
+6. **[Feature Decomposition]({{ '/pages/process/feature-decomposition/' | relative_url }})** — the signed-off PRD is decomposed into individually deliverable feature specifications, each detailed enough to brief a delivery team.
 
 ## Mandatory Inputs
 
@@ -70,4 +75,4 @@ All three input types are required for the process to produce a complete and acc
 
 ## Final Output
 
-The process produces a signed-off PRD published on GitHub. This document comprehensively describes the legacy application's behaviour, domain model, workflows, and business rules — ready for implementation planning.
+The process produces a signed-off PRD and a set of feature specifications, published on GitHub. The PRD comprehensively describes the legacy application's behaviour, domain model, workflows, and business rules. The feature specifications break the PRD down into individually deliverable units, each ready to brief a delivery team.

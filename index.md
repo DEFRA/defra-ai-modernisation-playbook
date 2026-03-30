@@ -6,7 +6,7 @@ title: Home
 
 Version {{ site.version }}
 
-This playbook describes how Defra's Legacy Application Programme (LAP) uses AI-assisted reverse engineering to produce Product Requirements Documents (PRDs) from legacy application artefacts. It covers the end-to-end process — from gathering source material through automated analysis to a signed-off PRD ready for implementation planning.
+This playbook describes how Defra's Legacy Application Programme (LAP) uses AI-assisted reverse engineering to produce Product Requirements Documents (PRDs) and feature specifications from legacy application artefacts. It covers the end-to-end process — from gathering source material through automated analysis to a signed-off PRD and a set of individually deliverable feature specs ready for re-engineering.
 
 ```mermaid
 flowchart LR
@@ -14,6 +14,7 @@ flowchart LR
     B --> C["Review Curated Outputs"]
     C --> D["Analysis & PRD Generation"]
     D --> E["PRD Review & Sign-off"]
+    E --> F["Feature Decomposition"]
 ```
 
 ## Sections
