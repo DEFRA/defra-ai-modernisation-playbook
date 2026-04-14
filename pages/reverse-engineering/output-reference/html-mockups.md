@@ -1,6 +1,6 @@
 ---
 title: HTML Mockups
-permalink: /pages/output-reference/html-mockups/
+permalink: /pages/reverse-engineering/output-reference/html-mockups/
 ---
 
 ## What this artefact is

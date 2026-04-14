@@ -1,6 +1,6 @@
 ---
 title: Project Directory Structure
-permalink: /pages/tooling/directory-structure/
+permalink: /pages/reverse-engineering/tooling/directory-structure/
 ---
 
 # Project Directory Structure

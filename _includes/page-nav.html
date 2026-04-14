@@ -1,5 +1,5 @@
 {% comment %}
-  Build a flat list of pages from the navigation hierarchy.
+  Build a flat list of pages from the navigation hierarchy (up to 3 levels).
   Parent entries whose URL duplicates their first child are skipped
   to avoid duplicate entries in the sequence.
 {% endcomment %}
@@ -11,6 +11,10 @@
   {% if item.children and item.children.size > 0 %}
     {% if item.url == item.children[0].url %}
       {% assign skip_parent = true %}
+    {% elsif item.children[0].children and item.children[0].children.size > 0 %}
+      {% if item.url == item.children[0].children[0].url %}
+        {% assign skip_parent = true %}
+      {% endif %}
     {% endif %}
   {% endif %}
 
@@ -21,8 +25,24 @@
 
   {% if item.children %}
     {% for child in item.children %}
-      {% assign entry = child.url | prepend: "||" | prepend: child.title %}
-      {% assign flat_nav = flat_nav | push: entry %}
+      {% assign skip_child = false %}
+      {% if child.children and child.children.size > 0 %}
+        {% if child.url == child.children[0].url %}
+          {% assign skip_child = true %}
+        {% endif %}
+      {% endif %}
+
+      {% unless skip_child %}
+        {% assign entry = child.url | prepend: "||" | prepend: child.title %}
+        {% assign flat_nav = flat_nav | push: entry %}
+      {% endunless %}
+
+      {% if child.children %}
+        {% for grandchild in child.children %}
+          {% assign entry = grandchild.url | prepend: "||" | prepend: grandchild.title %}
+          {% assign flat_nav = flat_nav | push: entry %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   {% endif %}
 {% endfor %}

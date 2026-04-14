@@ -1,6 +1,6 @@
 ---
 title: Product Requirements Document
-permalink: /pages/output-reference/prd/
+permalink: /pages/reverse-engineering/output-reference/prd/
 ---
 
 ## What this artefact is

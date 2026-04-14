@@ -1,6 +1,6 @@
 ---
 title: Application Analysis
-permalink: /pages/output-reference/application-analysis/
+permalink: /pages/reverse-engineering/output-reference/application-analysis/
 ---
 
 ## What this artefact is

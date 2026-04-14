@@ -1,6 +1,6 @@
 ---
 title: Domain Analysis
-permalink: /pages/output-reference/domain-analysis/
+permalink: /pages/reverse-engineering/output-reference/domain-analysis/
 ---
 
 ## What this artefact is

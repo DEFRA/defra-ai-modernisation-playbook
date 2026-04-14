@@ -1,6 +1,6 @@
 ---
 title: Database Analysis
-permalink: /pages/output-reference/database-analysis/
+permalink: /pages/reverse-engineering/output-reference/database-analysis/
 ---
 
 ## What this artefact is

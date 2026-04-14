@@ -7,7 +7,16 @@
       {% if item.children %}
       <ul>
         {% for child in item.children %}
-        <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+        <li>
+          <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
+          {% if child.children %}
+          <ul>
+            {% for grandchild in child.children %}
+            <li><a href="{{ grandchild.url | relative_url }}">{{ grandchild.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
         {% endfor %}
       </ul>
       {% endif %}

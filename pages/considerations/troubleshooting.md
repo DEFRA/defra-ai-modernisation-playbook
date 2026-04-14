@@ -49,5 +49,5 @@ If an agent runs out of turns before finishing, the output file may be incomplet
 ### Plugin or extension not loading
 
 If skills or agents are not available in your AI coding assistant session:
-- Verify the plugin or extension is correctly installed and configured. See the [Tooling]({{ '/pages/tooling/' | relative_url }}) section for tool-specific setup instructions.
+- Verify the plugin or extension is correctly installed and configured. See the [Tooling]({{ '/pages/reverse-engineering/tooling/' | relative_url }}) section for tool-specific setup instructions.
 - Start a new session — configuration changes are typically picked up on session start, not mid-session.

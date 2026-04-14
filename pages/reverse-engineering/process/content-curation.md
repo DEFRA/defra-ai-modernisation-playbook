@@ -1,6 +1,6 @@
 ---
 title: "Phase 2: Content Curation"
-permalink: /pages/process/content-curation/
+permalink: /pages/reverse-engineering/process/content-curation/
 ---
 
 # Phase 2: Content Curation
@@ -25,7 +25,7 @@ The `curate-transcript` skill removes off-topic content (project management, sch
 
 ## How to Run
 
-Invoke the `digital-content-curator` agent via your AI coding assistant with the appropriate plugin or extension loaded. The agent discovers all raw files in the `screenshots/` and `transcripts/` directories and processes them automatically. See [Tooling]({{ '/pages/tooling/' | relative_url }}) for setup instructions.
+Invoke the `digital-content-curator` agent via your AI coding assistant with the appropriate plugin or extension loaded. The agent discovers all raw files in the `screenshots/` and `transcripts/` directories and processes them automatically. See [Tooling]({{ '/pages/reverse-engineering/tooling/' | relative_url }}) for setup instructions.
 
 For example:
 
@@ -40,4 +40,4 @@ For example:
 
 When there are many screenshots or transcripts (50+), the curator agent may exhaust its turn budget before finishing. See [Content curation stalls on large file sets]({{ "/pages/considerations/troubleshooting/" | relative_url }}) in the Troubleshooting section for a resumable bash workaround.
 
-For full details on the available skills and tooling, see the [Tooling]({{ '/pages/tooling/' | relative_url }}) section.
+For full details on the available skills and tooling, see the [Tooling]({{ '/pages/reverse-engineering/tooling/' | relative_url }}) section.

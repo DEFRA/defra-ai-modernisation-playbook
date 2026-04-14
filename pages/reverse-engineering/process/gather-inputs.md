@@ -1,6 +1,6 @@
 ---
 title: "Phase 1: Gather Inputs"
-permalink: /pages/process/gather-inputs/
+permalink: /pages/reverse-engineering/process/gather-inputs/
 ---
 
 # Phase 1: Gather Inputs

@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot
-permalink: /pages/tooling/copilot/
+permalink: /pages/reverse-engineering/tooling/copilot/
 ---
 
 # GitHub Copilot

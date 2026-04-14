@@ -9,19 +9,19 @@ LAP is Defra's **Legacy Application Programme** — a programme to understand, d
 
 ## What this playbook covers
 
-This playbook describes an **AI-enabled reverse engineering process** that uses generative AI to automate the production of Product Requirements Documents (PRDs) from legacy application artefacts. Those artefacts include:
+This playbook describes an **AI-enabled modernisation process** that covers two distinct phases of legacy application modernisation:
 
-- **Source code** — the application's codebase, which the AI tooling analyses to extract structure, logic, and behaviour
-- **UI screenshots** — captured screens from the running application, which the AI tooling interprets to document user-facing functionality
-- **Stakeholder interview transcripts** — recorded conversations with application users and product owners, which provide business context, workflows, and tacit knowledge
+1. **[Reverse Engineering]({{ "/pages/reverse-engineering/" | relative_url }})** — uses generative AI to analyse legacy application artefacts (source code, UI screenshots, and stakeholder interview transcripts) and produce a comprehensive Product Requirements Document (PRD) that captures what the application does, why it does it, and what a modern replacement would need to deliver.
 
-The process brings these inputs together and produces a comprehensive PRD that captures what the legacy application does, why it does it, and what a modern replacement would need to deliver.
+2. **[Re-engineering]({{ "/pages/re-engineering/" | relative_url }})** — takes the signed-off PRD and uses it to design, build, and deploy a modern replacement for the legacy application.
+
+The two phases are designed to be used independently or together. A team may use only the reverse engineering phase to document an application, or pick up at the re-engineering phase if a PRD already exists.
 
 ## Scope
 
-This playbook covers everything from **gathering inputs** through to a **signed-off PRD**. It is a complete guide to the reverse engineering and requirements-capture phase of legacy modernisation.
+This playbook covers the full modernisation lifecycle — from **gathering inputs** and producing a **signed-off PRD** through to **building a modern replacement**.
 
-The build and implementation phase is **out of scope**. Guidance on designing, developing, and deploying a modern replacement will be added in future iterations of this playbook.
+The [Reverse Engineering]({{ "/pages/reverse-engineering/" | relative_url }}) phase is fully documented. The [Re-engineering]({{ "/pages/re-engineering/" | relative_url }}) phase is under active development.
 
 ## Audience
 
@@ -30,13 +30,13 @@ This playbook is written for:
 - **Defra internal delivery teams** working on legacy modernisation projects
 - **Third-party suppliers** engaged by Defra to carry out modernisation work
 
-It assumes readers are familiar with agile delivery practices and have access to the tooling described in the [Tooling]({{ "/pages/tooling/" | relative_url }}) section.
+It assumes readers are familiar with agile delivery practices and have access to the tooling described in the [Tooling]({{ "/pages/reverse-engineering/tooling/" | relative_url }}) section.
 
 ## How to read this playbook
 
 We recommend reading the playbook in the following order:
 
 1. **Start here** — read the rest of the [Overview]({{ "/pages/overview/" | relative_url }}) section for context on the team, stakeholders, and approach
-2. **Follow the process** — work through the [Process]({{ "/pages/process/" | relative_url }}) guide step by step, from gathering inputs through to PRD sign-off
-3. **Use reference material** — consult the [Output Reference]({{ "/pages/output-reference/" | relative_url }}) and [Tooling]({{ "/pages/tooling/" | relative_url }}) sections as needed while running the process
+2. **Follow the relevant phase** — work through the [Reverse Engineering]({{ "/pages/reverse-engineering/" | relative_url }}) or [Re-engineering]({{ "/pages/re-engineering/" | relative_url }}) section depending on where you are in the modernisation lifecycle
+3. **Use reference material** — consult the output reference and tooling sections within each phase as needed
 4. **Review considerations** — read the [Considerations]({{ "/pages/considerations/" | relative_url }}) section before starting a project, so you are aware of risks, limitations, and practical advice from previous engagements

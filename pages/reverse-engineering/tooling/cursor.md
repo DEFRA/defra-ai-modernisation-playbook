@@ -1,6 +1,6 @@
 ---
 title: Cursor
-permalink: /pages/tooling/cursor/
+permalink: /pages/reverse-engineering/tooling/cursor/
 ---
 
 # Cursor

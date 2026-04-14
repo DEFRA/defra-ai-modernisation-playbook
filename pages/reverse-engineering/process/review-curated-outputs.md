@@ -1,6 +1,6 @@
 ---
 title: "Phase 3: Review Curated Outputs"
-permalink: /pages/process/review-curated-outputs/
+permalink: /pages/reverse-engineering/process/review-curated-outputs/
 ---
 
 # Phase 3: Review Curated Outputs

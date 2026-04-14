@@ -1,6 +1,6 @@
 ---
 title: Curated Transcripts
-permalink: /pages/output-reference/curated-transcripts/
+permalink: /pages/reverse-engineering/output-reference/curated-transcripts/
 ---
 
 ## What this artefact is

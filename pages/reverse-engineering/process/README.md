@@ -1,6 +1,6 @@
 ---
 title: Process Overview
-permalink: /pages/process/
+permalink: /pages/reverse-engineering/process/
 ---
 
 # Process Overview
@@ -48,15 +48,15 @@ flowchart TB
 
 ## The Five Phases
 
-1. **[Gather Inputs]({{ '/pages/process/gather-inputs/' | relative_url }})** — collect screenshots, source code, and stakeholder interview transcripts. These are the raw materials that feed every subsequent step.
+1. **[Gather Inputs]({{ '/pages/reverse-engineering/process/gather-inputs/' | relative_url }})** — collect screenshots, source code, and stakeholder interview transcripts. These are the raw materials that feed every subsequent step.
 
-2. **[Content Curation]({{ '/pages/process/content-curation/' | relative_url }})** — AI converts screenshots to semantic HTML mockups and curates transcripts by removing off-topic content while preserving domain knowledge verbatim.
+2. **[Content Curation]({{ '/pages/reverse-engineering/process/content-curation/' | relative_url }})** — AI converts screenshots to semantic HTML mockups and curates transcripts by removing off-topic content while preserving domain knowledge verbatim.
 
-3. **[Review Curated Outputs]({{ '/pages/process/review-curated-outputs/' | relative_url }})** — the team reviews HTML mockups and curated transcripts for quality, ensuring they faithfully represent the originals before automated analysis begins.
+3. **[Review Curated Outputs]({{ '/pages/reverse-engineering/process/review-curated-outputs/' | relative_url }})** — the team reviews HTML mockups and curated transcripts for quality, ensuring they faithfully represent the originals before automated analysis begins.
 
-4. **[Analysis & PRD Generation]({{ '/pages/process/analysis-and-prd/' | relative_url }})** — four specialist AI analyst agents examine all inputs in parallel, and a product-manager agent synthesises their outputs into a comprehensive PRD.
+4. **[Analysis & PRD Generation]({{ '/pages/reverse-engineering/process/analysis-and-prd/' | relative_url }})** — four specialist AI analyst agents examine all inputs in parallel, and a product-manager agent synthesises their outputs into a comprehensive PRD.
 
-5. **[PRD Review & Sign-off]({{ '/pages/process/prd-review-and-signoff/' | relative_url }})** — the team and stakeholders review and approve the PRD, marking the end of the reverse engineering phase.
+5. **[PRD Review & Sign-off]({{ '/pages/reverse-engineering/process/prd-review-and-signoff/' | relative_url }})** — the team and stakeholders review and approve the PRD, marking the end of the reverse engineering phase.
 
 ## Mandatory Inputs
 

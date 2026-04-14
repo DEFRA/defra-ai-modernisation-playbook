@@ -1,6 +1,6 @@
 ---
 title: "Phase 5: PRD Review & Sign-off"
-permalink: /pages/process/prd-review-and-signoff/
+permalink: /pages/reverse-engineering/process/prd-review-and-signoff/
 ---
 
 # Phase 5: PRD Review & Sign-off

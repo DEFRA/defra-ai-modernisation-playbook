@@ -9,65 +9,89 @@
       url: /pages/overview/the-team/
     - title: "2.3. Application Stakeholders"
       url: /pages/overview/stakeholders/
-- title: "3. Process"
-  url: /pages/process/
+- title: "3. Reverse Engineering"
+  url: /pages/reverse-engineering/
   children:
-    - title: "3.1. Process Overview"
-      url: /pages/process/
-    - title: "3.2. Gather Inputs"
-      url: /pages/process/gather-inputs/
-    - title: "3.3. Content Curation"
-      url: /pages/process/content-curation/
-    - title: "3.4. Review Curated Outputs"
-      url: /pages/process/review-curated-outputs/
-    - title: "3.5. Analysis & PRD Generation"
-      url: /pages/process/analysis-and-prd/
-    - title: "3.6. PRD Review & Sign-off"
-      url: /pages/process/prd-review-and-signoff/
-- title: "4. Tooling"
-  url: /pages/tooling/
+    - title: "3.1. Process"
+      url: /pages/reverse-engineering/process/
+      children:
+        - title: "3.1.1. Process Overview"
+          url: /pages/reverse-engineering/process/
+        - title: "3.1.2. Gather Inputs"
+          url: /pages/reverse-engineering/process/gather-inputs/
+        - title: "3.1.3. Content Curation"
+          url: /pages/reverse-engineering/process/content-curation/
+        - title: "3.1.4. Review Curated Outputs"
+          url: /pages/reverse-engineering/process/review-curated-outputs/
+        - title: "3.1.5. Analysis & PRD Generation"
+          url: /pages/reverse-engineering/process/analysis-and-prd/
+        - title: "3.1.6. PRD Review & Sign-off"
+          url: /pages/reverse-engineering/process/prd-review-and-signoff/
+    - title: "3.2. Tooling"
+      url: /pages/reverse-engineering/tooling/
+      children:
+        - title: "3.2.1. Claude Code Plugin"
+          url: /pages/reverse-engineering/tooling/claude-code/
+        - title: "3.2.2. GitHub Copilot"
+          url: /pages/reverse-engineering/tooling/copilot/
+        - title: "3.2.3. Cursor (TBD)"
+          url: /pages/reverse-engineering/tooling/cursor/
+        - title: "3.2.4. Project Directory Structure"
+          url: /pages/reverse-engineering/tooling/directory-structure/
+    - title: "3.3. Output Reference"
+      url: /pages/reverse-engineering/output-reference/
+      children:
+        - title: "3.3.1. HTML Mockups"
+          url: /pages/reverse-engineering/output-reference/html-mockups/
+        - title: "3.3.2. Curated Transcripts"
+          url: /pages/reverse-engineering/output-reference/curated-transcripts/
+        - title: "3.3.3. Domain Analysis"
+          url: /pages/reverse-engineering/output-reference/domain-analysis/
+        - title: "3.3.4. Interaction Analysis"
+          url: /pages/reverse-engineering/output-reference/interaction-analysis/
+        - title: "3.3.5. Application Analysis"
+          url: /pages/reverse-engineering/output-reference/application-analysis/
+        - title: "3.3.6. Database Analysis"
+          url: /pages/reverse-engineering/output-reference/database-analysis/
+        - title: "3.3.7. Product Requirements Document"
+          url: /pages/reverse-engineering/output-reference/prd/
+- title: "4. Re-engineering"
+  url: /pages/re-engineering/
   children:
-    - title: "4.1. Claude Code Plugin"
-      url: /pages/tooling/claude-code/
-    - title: "4.2. GitHub Copilot"
-      url: /pages/tooling/copilot/
-    - title: "4.3. Cursor (TBD)"
-      url: /pages/tooling/cursor/
-    - title: "4.4. Project Directory Structure"
-      url: /pages/tooling/directory-structure/
-- title: "5. Output Reference"
-  url: /pages/output-reference/
-  children:
-    - title: "5.1. HTML Mockups"
-      url: /pages/output-reference/html-mockups/
-    - title: "5.2. Curated Transcripts"
-      url: /pages/output-reference/curated-transcripts/
-    - title: "5.3. Domain Analysis"
-      url: /pages/output-reference/domain-analysis/
-    - title: "5.4. Interaction Analysis"
-      url: /pages/output-reference/interaction-analysis/
-    - title: "5.5. Application Analysis"
-      url: /pages/output-reference/application-analysis/
-    - title: "5.6. Database Analysis"
-      url: /pages/output-reference/database-analysis/
-    - title: "5.7. Product Requirements Document"
-      url: /pages/output-reference/prd/
-- title: "6. Considerations & Caveats"
+    - title: "4.1. Process"
+      url: /pages/re-engineering/process/
+      children:
+        - title: "4.1.1. Process Overview"
+          url: /pages/re-engineering/process/
+        - title: "4.1.2. Feature Decomposition"
+          url: /pages/re-engineering/process/feature-decomposition/
+        - title: "4.1.3. Feature Plan Review"
+          url: /pages/re-engineering/process/feature-plan-review/
+        - title: "4.1.4. Feature Specification Review & Sign-off"
+          url: /pages/re-engineering/process/feature-review-and-signoff/
+    - title: "4.2. Tooling"
+      url: /pages/re-engineering/tooling/
+    - title: "4.3. Output Reference"
+      url: /pages/re-engineering/output-reference/
+      children:
+        - title: "4.3.1. Feature Specification"
+          url: /pages/re-engineering/output-reference/feature-specification/
+- title: "5. Considerations & Caveats"
   url: /pages/considerations/
   children:
-    - title: "6.1. Information Governance"
+    - title: "5.1. Information Governance"
       url: /pages/considerations/information-governance/
-    - title: "6.2. PII Handling"
+    - title: "5.2. PII Handling"
       url: /pages/considerations/pii-handling/
-    - title: "6.3. AI Output Quality"
+    - title: "5.3. AI Output Quality"
       url: /pages/considerations/ai-quality/
-    - title: "6.4. Cost & Token Usage"
+    - title: "5.4. Cost & Token Usage"
       url: /pages/considerations/cost-and-tokens/
-    - title: "6.5. Model Selection"
+    - title: "5.5. Model Selection"
       url: /pages/considerations/model-selection/
-    - title: "6.6. Troubleshooting"
+    - title: "5.6. Troubleshooting"
       url: /pages/considerations/troubleshooting/
-- title: "7. Glossary"
+- title: "6. Glossary"
   url: /pages/glossary/
-- title: "8. Contributing"
+- title: "7. Contributing"
   url: /pages/contributing/

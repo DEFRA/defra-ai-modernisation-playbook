@@ -226,10 +226,15 @@ section {
 
   li {
     margin-bottom: 5px;
-    
+
     li {
       margin-bottom: 3px;
       font-size: 13px;
+
+      li {
+        margin-bottom: 2px;
+        font-size: 12px;
+      }
     }
   }
 

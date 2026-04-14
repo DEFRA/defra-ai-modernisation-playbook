@@ -1,6 +1,6 @@
 ---
 title: Claude Code Plugin
-permalink: /pages/tooling/claude-code/
+permalink: /pages/reverse-engineering/tooling/claude-code/
 ---
 
 # Claude Code Plugin

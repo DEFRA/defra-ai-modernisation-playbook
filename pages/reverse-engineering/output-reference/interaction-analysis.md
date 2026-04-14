@@ -1,6 +1,6 @@
 ---
 title: Interaction Analysis
-permalink: /pages/output-reference/interaction-analysis/
+permalink: /pages/reverse-engineering/output-reference/interaction-analysis/
 ---
 
 ## What this artefact is
