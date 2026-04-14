@@ -24,12 +24,6 @@
       url: /pages/process/analysis-and-prd/
     - title: "3.6. PRD Review & Sign-off"
       url: /pages/process/prd-review-and-signoff/
-    - title: "3.7. Feature Decomposition"
-      url: /pages/process/feature-decomposition/
-    - title: "3.8. Rebuild Setup"
-      url: /pages/process/rebuild-setup/
-    - title: "3.9. Autonomous Build"
-      url: /pages/process/autonomous-build/
 - title: "4. Tooling"
   url: /pages/tooling/
   children:
@@ -39,9 +33,7 @@
       url: /pages/tooling/copilot/
     - title: "4.3. Cursor (TBD)"
       url: /pages/tooling/cursor/
-    - title: "4.4. Ralph"
-      url: /pages/tooling/ralph/
-    - title: "4.5. Project Directory Structure"
+    - title: "4.4. Project Directory Structure"
       url: /pages/tooling/directory-structure/
 - title: "5. Output Reference"
   url: /pages/output-reference/
@@ -60,8 +52,6 @@
       url: /pages/output-reference/database-analysis/
     - title: "5.7. Product Requirements Document"
       url: /pages/output-reference/prd/
-    - title: "5.8. Feature Specifications"
-      url: /pages/output-reference/feature-specifications/
 - title: "6. Considerations & Caveats"
   url: /pages/considerations/
   children:
