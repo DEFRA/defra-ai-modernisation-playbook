@@ -21,7 +21,8 @@ flowchart LR
     end
     RE --> F["PRD"]
     subgraph REENGG ["Re-engineering"]
-        G["TBD"]
+        G["Feature Decomposition"] --> H["Autonomous Build"]
+        H --> I["Implementation Review"]
     end
     F --> REENGG
 ```

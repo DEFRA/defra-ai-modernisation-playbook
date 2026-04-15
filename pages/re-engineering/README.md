@@ -15,11 +15,12 @@ The first step is **feature decomposition**: slicing the PRD into individually d
 flowchart LR
     A["PRD"] --> B["Feature Decomposition"]
     B --> C["Feature Plan Review"]
-    C --> D["Feature Specification Review & Sign-off"]
-    D --> E["Further phases TBD"]
+    C --> D["Feature Spec Review"]
+    D --> E["Autonomous Build"]
+    E --> F["Implementation Review"]
 ```
 
-Further phases covering architecture design, implementation, and deployment will be added as the re-engineering process matures.
+Features are implemented one at a time in build layer order using autonomous AI coding loops, then reviewed before moving to the next.
 
 ### Sections
 

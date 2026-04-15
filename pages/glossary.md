@@ -6,6 +6,7 @@ permalink: /pages/glossary/
 | Term | Definition |
 |------|------------|
 | Agent | An autonomous AI subagent that performs a specific analysis or coordination task |
+| Autonomous build | The process of implementing a feature using an AI coding agent running in an unattended loop of plan and build iterations |
 | BDD | Behaviour-Driven Development — a method of specifying software behaviour using Given/When/Then scenarios |
 | Bounded context | A DDD concept — a boundary within which a domain model and its language are consistent and unambiguous |
 | Claude Code | Anthropic's command-line AI coding assistant |
@@ -23,6 +24,8 @@ permalink: /pages/glossary/
 | Plugin | An extension for an AI coding assistant that adds skills, agents, and hooks for a specific domain |
 | MoSCoW | A prioritisation method — Must have, Should have, Could have, Won't have |
 | PRD | Product Requirements Document — the final deliverable of the reverse engineering process and the primary input to the re-engineering process |
+| Ralph | An autonomous AI coding agent loop runner that implements the Ralph Wiggum pattern — runs iterative plan/build cycles to implement feature specifications |
+| Ralph Wiggum pattern | A technique for running AI coding agents in autonomous loops where each iteration starts a fresh session and picks up where the last left off, avoiding context window exhaustion |
 | Re-engineering | The process of using a signed-off PRD to design, build, and deploy a modern replacement for a legacy application |
 | Reverse engineering | The process of analysing an existing system to understand its behaviour, structure, and requirements |
 | Skill | A reusable command defined in a plugin or extension that performs a specific task |

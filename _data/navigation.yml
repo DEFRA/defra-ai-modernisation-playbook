@@ -69,6 +69,10 @@
           url: /pages/re-engineering/process/feature-plan-review/
         - title: "4.1.4. Feature Specification Review & Sign-off"
           url: /pages/re-engineering/process/feature-review-and-signoff/
+        - title: "4.1.5. Autonomous Build"
+          url: /pages/re-engineering/process/autonomous-build/
+        - title: "4.1.6. Implementation Review"
+          url: /pages/re-engineering/process/implementation-review/
     - title: "4.2. Tooling"
       url: /pages/re-engineering/tooling/
     - title: "4.3. Output Reference"

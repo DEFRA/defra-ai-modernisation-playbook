@@ -2,6 +2,7 @@ theme: jekyll-theme-minimal
 title: AI-Enabled Legacy Modernisation Playbook
 description: A step-by-step guide to using AI-assisted reverse engineering to produce Product Requirements Documents from legacy application artefacts, developed by Defra's Legacy Application Programme.
 baseurl: '/defra-ai-modernisation-playbook'
+repository: DEFRA/defra-ai-modernisation-playbook
 logo: /assets/images/defra-logo.svg
 author: "Defra"
 lang: "en-GB"

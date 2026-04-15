@@ -11,7 +11,7 @@ The re-engineering process takes a signed-off Product Requirements Document (PRD
 flowchart TB
     PRD(["output/PRD.md"])
 
-    subgraph decomposition ["Phase 1 — Feature Decomposition"]
+    subgraph decomposition ["Phases 1–3 — Feature Decomposition"]
         ptf[prd-to-features]
         plan(["Feature Plan"])
         fw[feature-writer]
@@ -24,8 +24,14 @@ flowchart TB
 
     PRD --> ptf
 
-    future["Further phases TBD"]
-    features --> future
+    subgraph build ["Phases 4–5 — Per Feature"]
+        ralph[ralph plan + build]
+        review["Implementation Review"]
+
+        ralph --> review
+    end
+
+    features --> ralph
 ```
 
 ## Phases
@@ -36,7 +42,9 @@ flowchart TB
 
 3. **[Feature Specification Review & Sign-off]({{ '/pages/re-engineering/process/feature-review-and-signoff/' | relative_url }})** — the team and stakeholders review the generated feature specifications for accuracy, coverage, and readiness for implementation.
 
-Further phases covering architecture design and implementation will be added as the re-engineering process matures.
+4. **[Autonomous Build]({{ '/pages/re-engineering/process/autonomous-build/' | relative_url }})** — each signed-off feature specification is implemented using an autonomous AI coding loop ([ralph](https://github.com/marc0der/ralph)), which iteratively plans and builds until the feature is complete and passing tests.
+
+5. **[Implementation Review]({{ '/pages/re-engineering/process/implementation-review/' | relative_url }})** — a light-touch review of each implemented feature from a technical and product perspective before moving to the next feature.
 
 ## Input
 
