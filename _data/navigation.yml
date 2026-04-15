@@ -77,6 +77,11 @@
           url: /pages/re-engineering/process/implementation-review/
     - title: "4.2. Tooling"
       url: /pages/re-engineering/tooling/
+      children:
+        - title: "4.2.1. Claude Code Plugin"
+          url: /pages/re-engineering/tooling/claude-code/
+        - title: "4.2.2. Ralph"
+          url: /pages/re-engineering/tooling/ralph/
 - title: "5. Considerations & Caveats"
   url: /pages/considerations/
   children:
