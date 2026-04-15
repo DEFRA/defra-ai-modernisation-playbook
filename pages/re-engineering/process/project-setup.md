@@ -58,7 +58,7 @@ Start with the topics the agent will need on day one; add more as gaps surface d
 
 ### Rules file template
 
-Each file in `rules/` should follow a consistent structure so the agent can parse them reliably. The template below is from the [sdkman prompt-library](https://github.com/sdkman/prompt-library/blob/main/templates/00-rules-template.md) and is the recommended shape:
+Each file in `rules/` should follow a consistent structure so the agent can parse them reliably. The template below is the recommended shape for high quality rules:
 
 ```markdown
 # [Rules Topic/Domain Name]
@@ -192,7 +192,7 @@ When in doubt: [Simple decision heuristic or single guiding principle]
 
 ### Using the template well
 
-You don't have to fill this template in by hand. Give it to an AI agent along with the topic you want to cover, and let the agent produce the first draft — then review and refine it. A prompt like the following works well:
+You don't have to fill this template in by hand. Give it to an AI agent along with the topic you want to cover, and let the agent produce it. Finally, review and refine it if necessary. A prompt like the following works well:
 
 > Generate a rules file for **Clean Code** using the following template.
 >

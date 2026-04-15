@@ -29,16 +29,14 @@ Check `PROGRESS.md` for signals:
 - **Learnings** — patterns and gotchas discovered during implementation that may affect future features
 - **Failed iterations** — items that repeatedly failed may indicate specification ambiguity or architectural issues
 - **Unresolved items** — anything flagged but not completed during the loop
+- **Test and build commands** — commands not running correctly due to incorrect information in the `AGENTS.md`
 
 ## Who does the review
 
-The **product manager** and a **technical reviewer** should review the implementation. The product manager confirms the feature meets the specification's intent; the technical reviewer confirms the code quality and test coverage.
+The **product manager** and a **software engineer** should review the implementation. The product manager confirms the feature meets the specification's intent; the software engineer confirms the code quality and test coverage.
 
 ## Outcome
 
-A reviewed, implemented feature ready for integration. If issues are found, either:
-
-- Run another ralph build loop to address them (add findings to `specs/` or `IMPLEMENTATION_PLAN.md`)
-- Fix them manually before moving to the next feature
+A reviewed, implemented feature ready for integration. If issues are found, make improvement to the specification, or even add a new specification.
 
 Once satisfied, [archive the loop artifacts]({{ '/pages/re-engineering/process/autonomous-build/' | relative_url }}) and proceed to the next feature in build layer order.
