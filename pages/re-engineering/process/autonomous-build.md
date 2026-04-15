@@ -1,9 +1,9 @@
 ---
-title: "Phase 4: Autonomous Build"
+title: "Phase 5: Autonomous Build"
 permalink: /pages/re-engineering/process/autonomous-build/
 ---
 
-# Phase 4: Autonomous Build
+# Phase 5: Autonomous Build
 
 Each signed-off feature specification is implemented using an autonomous coding loop powered by [ralph](https://github.com/marc0der/ralph). Ralph runs an AI coding agent in repeated plan/build iterations — each iteration picks up where the last left off, working through the feature specification until it is fully implemented and passing tests.
 
@@ -20,12 +20,7 @@ A shared `IMPLEMENTATION_PLAN.md` acts as the handoff between iterations, giving
 
 ## Prerequisites
 
-- **Docker** (rootful) — required for the sandbox
-- **devcontainer CLI** — install with `npm install -g @devcontainers/cli`
-- **ralph** — install from [github.com/marc0der/ralph](https://github.com/marc0der/ralph)
-- **AI backend** — Claude Code or OpenAI Codex CLI installed and authenticated
-
-See the [ralph README](https://github.com/marc0der/ralph#install) for full installation instructions.
+[Project Setup]({{ '/pages/re-engineering/process/project-setup/' | relative_url }}) must be complete before running the autonomous build loop — the project needs the ralph tooling installed, an `AGENTS.md` / `CLAUDE.md` describing how the agent should operate, and a `rules/` directory describing what good looks like.
 
 ## Workflow per feature
 
@@ -33,17 +28,26 @@ Work through features in build layer order (lowest layers first), one feature at
 
 ### 1. Prepare the workspace
 
-Copy the signed-off feature specification into the target project's `specs/` directory:
-
-```bash
-cp output/features/FT-001-feature-name.md your-project/specs/
-```
-
 Initialise ralph workspace artifacts if not already present:
 
 ```bash
 cd your-project
 ralph init
+```
+
+This creates the following in the project (existing files are left untouched):
+
+- `IMPLEMENTATION_PLAN.md` — prioritised task list shared between iterations
+- `PROGRESS.md` — append-only log of what each iteration did, learned, and broke
+- `specs/` — directory for feature specifications driving the work
+- `.gitignore` — entries added for ralph's loop artifacts
+
+Ralph does not create `CLAUDE.md` / `AGENTS.md` — you maintain these yourself. See [Project artifacts](#project-artifacts) below for the full reference.
+
+Copy the signed-off feature specification into the project's `specs/` directory:
+
+```bash
+cp output/features/FT-001-feature-name.md your-project/specs/
 ```
 
 ### 2. Enter the sandbox
@@ -77,6 +81,14 @@ Adjust iterations based on feature complexity:
 ```bash
 ralph build -n 10        # smaller feature
 ralph build -n 100       # larger feature
+```
+
+Select the AI backend with `-b` / `--backend`. The default is `claude`; `codex` is also supported:
+
+```bash
+ralph build                # uses claude (default)
+ralph build -b codex       # uses OpenAI Codex CLI
+ralph plan -b codex        # backend flag also applies to planning
 ```
 
 ### 5. Review the results
