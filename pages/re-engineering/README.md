@@ -26,4 +26,3 @@ Features are implemented one at a time in build layer order using autonomous AI 
 
 - [Process]({{ "/pages/re-engineering/process/" | relative_url }}) — the re-engineering process, starting with feature decomposition
 - [Tooling]({{ "/pages/re-engineering/tooling/" | relative_url }}) — agents used during the re-engineering phase
-- [Output Reference]({{ "/pages/re-engineering/output-reference/" | relative_url }}) — artefacts produced during re-engineering

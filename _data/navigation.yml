@@ -77,11 +77,6 @@
           url: /pages/re-engineering/process/implementation-review/
     - title: "4.2. Tooling"
       url: /pages/re-engineering/tooling/
-    - title: "4.3. Output Reference"
-      url: /pages/re-engineering/output-reference/
-      children:
-        - title: "4.3.1. Feature Specification"
-          url: /pages/re-engineering/output-reference/feature-specification/
 - title: "5. Considerations & Caveats"
   url: /pages/considerations/
   children:

@@ -46,7 +46,7 @@ The agent presents a feature plan table showing each feature's ID, title, build 
 
 ### Stage 2: Feature specification generation
 
-After the plan is confirmed (or adjusted), the agent generates one [Feature Specification]({{ '/pages/re-engineering/output-reference/feature-specification/' | relative_url }}) file per feature in parallel.
+After the plan is confirmed (or adjusted), the agent generates one feature specification file per feature in parallel.
 
 ## What it produces
 
