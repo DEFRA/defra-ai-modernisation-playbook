@@ -39,4 +39,4 @@ The **product manager** and a **software engineer** should review the implementa
 
 A reviewed, implemented feature ready for integration. If issues are found, make improvement to the specification, or even add a new specification.
 
-Once satisfied, [archive the loop artifacts]({{ '/pages/re-engineering/process/autonomous-build/' | relative_url }}) and proceed to the next feature in build layer order.
+Once satisfied, [archive the loop artifacts]({{ '/pages/re-engineering/process/autonomous-build' | relative_url }}) and proceed to the next feature in build layer order.

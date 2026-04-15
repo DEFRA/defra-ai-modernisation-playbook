@@ -91,7 +91,7 @@ ralph build -b codex       # uses OpenAI Codex CLI
 ralph plan -b codex        # backend flag also applies to planning
 ```
 
-> **You don't need to guess the iteration count.** Ralph calculates a suggested iteration count from the implementation plan and asks for confirmation before starting the build loop. If you override with `-n` and set too many iterations, ralph detects noop iterations — iterations where no meaningful progress is made — and exits the loop early rather than burning through empty cycles.
+> **You don't need to guess the iteration count.** When `-n` is omitted, ralph calculates a suggested iteration count from the implementation plan and asks for confirmation before starting. When `-n` is specified, it is treated as an absolute override — ralph will run exactly that many iterations.
 
 ### 5. Review the results
 
