@@ -24,7 +24,7 @@ flowchart TB
 
     PRD --> ptf
 
-    subgraph build ["Phases 4–5 — Per Feature"]
+    subgraph build ["Phases 5–6 — Per Feature"]
         ralph[ralph plan + build]
         review["Implementation Review"]
 
@@ -42,9 +42,11 @@ flowchart TB
 
 3. **[Feature Specification Review & Sign-off]({{ '/pages/re-engineering/process/feature-review-and-signoff/' | relative_url }})** — the team and stakeholders review the generated feature specifications for accuracy, coverage, and readiness for implementation.
 
-4. **[Autonomous Build]({{ '/pages/re-engineering/process/autonomous-build/' | relative_url }})** — each signed-off feature specification is implemented using an autonomous AI coding loop ([ralph](https://github.com/marc0der/ralph)), which iteratively plans and builds until the feature is complete and passing tests.
+4. **[Project Setup]({{ '/pages/re-engineering/process/project-setup/' | relative_url }})** — install the autonomous build tooling and prepare the target project with an `AGENTS.md` / `CLAUDE.md` and a `rules/` directory describing what good looks like for the application being built.
 
-5. **[Implementation Review]({{ '/pages/re-engineering/process/implementation-review/' | relative_url }})** — a light-touch review of each implemented feature from a technical and product perspective before moving to the next feature.
+5. **[Autonomous Build]({{ '/pages/re-engineering/process/autonomous-build/' | relative_url }})** — each signed-off feature specification is implemented using an autonomous AI coding loop ([ralph](https://github.com/marc0der/ralph)), which iteratively plans and builds until the feature is complete and passing tests.
+
+6. **[Implementation Review]({{ '/pages/re-engineering/process/implementation-review/' | relative_url }})** — a light-touch review of each implemented feature from a technical and product perspective before moving to the next feature.
 
 ## Input
 
