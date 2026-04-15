@@ -1,9 +1,9 @@
 ---
-title: "Phase 5: Implementation Review"
+title: "Phase 6: Implementation Review"
 permalink: /pages/re-engineering/process/implementation-review/
 ---
 
-# Phase 5: Implementation Review
+# Phase 6: Implementation Review
 
 After ralph completes the build loop for a feature, the implementation is reviewed before moving to the next feature. This is a light-touch review — ralph's own test verification provides the primary quality gate, but human review catches issues that tests alone cannot.
 
