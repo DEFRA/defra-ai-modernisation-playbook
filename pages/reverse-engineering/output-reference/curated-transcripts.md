@@ -30,7 +30,7 @@ The curated transcript retains the original text with targeted removals:
 - Unrelated tangents and off-topic conversation
 - Any remaining personally identifiable information
 
-Output files follow the naming convention: `<name>_curated.txt`
+Output files are written to `output/transcripts/` and follow the naming convention: `<name>_curated.txt`
 
 ## Quality criteria
 
