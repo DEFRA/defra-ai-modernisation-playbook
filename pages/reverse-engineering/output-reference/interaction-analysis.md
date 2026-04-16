@@ -59,12 +59,12 @@ The following snippet shows a screen inventory entry for a search screen in a fi
 ### Search Screen
 
 - **Purpose:** Search for existing sample records in the repository
-- **HTML reference:** `html/Search.html`
+- **HTML reference:** `output/html/Search.html`
 - **Key fields:** Reference Number, Sample Type, Date Range
 - **Key actions:** Search, Clear, Export to Excel
 - **Navigation:** Accessed from Home; leads to Search Results
 - **Access restrictions:** Available to all authenticated users
-- **Transcript references:** `transcripts/demo_curated.txt` (lines 17-20, 74-75)
+- **Transcript references:** `output/transcripts/demo_curated.txt` (lines 17-20, 74-75)
 
 > "You can search by reference number if you know it, or use the filters to narrow down by sample type and date range. Most of us just search by reference number though."
-> — `transcripts/demo_curated.txt` (line 74)
+> — `output/transcripts/demo_curated.txt` (line 74)
