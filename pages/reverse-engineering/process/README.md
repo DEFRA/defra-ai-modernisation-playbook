@@ -16,8 +16,8 @@ flowchart TB
     subgraph curation ["Phase 2 — Content Curation"]
         i2h{{image-to-html}}
         ct{{curate-transcript}}
-        html(["html/*.html"])
-        curated(["*_curated.txt"])
+        html(["output/html/*.html"])
+        curated(["output/transcripts/*_curated.txt"])
 
         i2h --> html
         ct --> curated
