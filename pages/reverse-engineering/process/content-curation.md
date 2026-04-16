@@ -15,13 +15,13 @@ The `image-to-html` skill reads each screenshot and produces a semantic, unstyle
 
 > **Note:** Converting screenshots to HTML also reduces the AI workload in later phases, as the model can parse structured text far more efficiently than images. This contributes to more sustainable AI use — see the [DEFRA AI Playbook: Sustainability](https://github.com/DEFRA/defra-ai-sdlc/blob/main/pages/responsible-practices/sustainability.md) guidance for more detail.
 
-**Output:** `html/<name>.html`
+**Output:** `output/html/<name>.html`
 
 ### 2. Transcript to Curated Transcript
 
 The `curate-transcript` skill removes off-topic content (project management, scheduling, social chat) while preserving domain knowledge, application walkthroughs, and technical detail verbatim.
 
-**Output:** `transcripts/<name>_curated.txt`
+**Output:** `output/transcripts/<name>_curated.txt`
 
 ## How to Run
 
@@ -33,8 +33,8 @@ For example:
 
 ## What It Produces
 
-- `html/*.html` — semantic HTML mockups of every screenshot
-- `transcripts/*_curated.txt` — curated transcripts with off-topic content removed
+- `output/html/*.html` — semantic HTML mockups of every screenshot
+- `output/transcripts/*_curated.txt` — curated transcripts with off-topic content removed
 
 ## Large File Sets
 
