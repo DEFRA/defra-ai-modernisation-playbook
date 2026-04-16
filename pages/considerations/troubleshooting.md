@@ -16,7 +16,7 @@ CLAUDE="claude --plugin-dir /path/to/plugin --model claude-sonnet-4-20250514 --d
 for img in screenshots/*.{png,jpg,jpeg,gif,bmp,webp}; do
   [ -f "$img" ] || continue
   name="${img##*/}"; name="${name%.*}"
-  [ -f "html/${name}.html" ] && echo "Skipping $img (already done)" && continue
+  [ -f "output/html/${name}.html" ] && echo "Skipping $img (already done)" && continue
   echo "Processing $img..."
   $CLAUDE -p "/image-to-html $img" --allowedTools "Read,Write,Bash(mkdir*)"
 done
@@ -25,7 +25,7 @@ for txt in transcripts/*.txt; do
   [ -f "$txt" ] || continue
   [[ "$txt" == *_curated.txt ]] && continue
   name="${txt##*/}"; name="${name%.txt}"
-  [ -f "transcripts/${name}_curated.txt" ] && echo "Skipping $txt (already done)" && continue
+  [ -f "output/transcripts/${name}_curated.txt" ] && echo "Skipping $txt (already done)" && continue
   echo "Processing $txt..."
   $CLAUDE -p "/curate-transcript $txt" --allowedTools "Read,Edit,Bash(mkdir*;cp*)"
 done
