@@ -53,8 +53,8 @@ The following snippet shows a portion of the Ubiquitous Language glossary for a 
 
 | Term | Definition | Source |
 |------|-----------|--------|
-| Reference Number | Unique identifier for sample submissions, format FS######-## | transcripts/demo_curated.txt (line 20) |
-| Submission | A collection of one or more samples received from external laboratories | transcripts/demo_curated.txt (line 92) |
-| Sample | Individual biological material within a submission | transcripts/demo_curated.txt (line 504) |
-| Sender Laboratory | The external laboratory that dispatched the submission | transcripts/walkthrough_curated.txt (line 38) |
-| Registration | The process of recording a new submission in the system | transcripts/demo_curated.txt (line 145) |
+| Reference Number | Unique identifier for sample submissions, format FS######-## | output/transcripts/demo_curated.txt (line 20) |
+| Submission | A collection of one or more samples received from external laboratories | output/transcripts/demo_curated.txt (line 92) |
+| Sample | Individual biological material within a submission | output/transcripts/demo_curated.txt (line 504) |
+| Sender Laboratory | The external laboratory that dispatched the submission | output/transcripts/walkthrough_curated.txt (line 38) |
+| Registration | The process of recording a new submission in the system | output/transcripts/demo_curated.txt (line 145) |
