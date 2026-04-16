@@ -15,7 +15,7 @@ Check that each HTML mockup meets the following criteria:
 - **Text accuracy** — all visible text has been captured correctly.
 - **PII replacement** — any PII visible in the original has been replaced with fake equivalents.
 - **UI structure** — forms, tables, navigation elements, and layout are correctly represented in the HTML.
-- **Completeness** — no screens have been missed. Cross-reference the `html/` directory against the `screenshots/` directory to confirm every screenshot has a corresponding mockup.
+- **Completeness** — no screens have been missed. Cross-reference the `output/html/` directory against the `screenshots/` directory to confirm every screenshot has a corresponding mockup.
 
 ## Reviewing Curated Transcripts
 
